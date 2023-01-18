@@ -39,7 +39,7 @@
         <li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="#">On Going</a></li>
         <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign Up</a></li>
+        <li><a class="dropdown-item" href="Sign up.html">Sign Up</a></li>
       </ul>
     </div>
 </nav>
@@ -53,7 +53,7 @@
     <div class="mb-2 row">
       <div class="col-md-4">Nama</div>
       <div class="col-md-8">
-          <input id="istilah" class="form-control" type="text" placeholder="Nama" aria-label="default input example">
+          <input id="nama" class="form-control" type="text" placeholder="Nama" aria-label="default input example">
       </div>
     </div>
     
@@ -64,10 +64,20 @@
         </div>
       </div>
       <div class="mb-2 row">
-        <div class="col-md-4">Passwords</div>
+        <div class="col-md-4">Password</div>
         <div class="col-md-8">
-            <input id="pas" class="form-control" type="password" placeholder="Passwords" aria-label="default input example">
+            <input id="pas" class="form-control" type="password" placeholder="Password" aria-label="default input example">
         </div>
+      </div>
+
+      <div class="mb-2 row">
+        <div class="col-md-4">Tanggal</div>
+        <div class="col-md-4">
+          <input id="tgl" class="form-control" type="date" placeholder="Default input" aria-label="default input example">
+        </div>
+        <!-- <div class="col-md-3">
+            <input class="form-control" type="date" placeholder="Default input" aria-label="default input example">
+        </div> -->
       </div>
     
       <div class="mb-2 row">
@@ -82,9 +92,16 @@
           <div class="col-md-4"></div>
         <div class="col-md-2 ">
               <div class="d-grid gap-2">
-                  <button class="btn btn-info" id="list" type="button" onclick="perubahan()">Sign Up</button>               
+                  <button class="btn btn-info" id="list" type="button" onclick="sign()">Sign Up</button>               
                 </div>
           </div>
+
+              <div class="col-md-2 ">
+              <div class="d-grid gap-2">
+                <button class="btn btn-info" id="list" type="button" onclick="reseet()">Reset</button>               
+              </div>
+          </div>
+
           <div class="col-md-2">
             <button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
             <div id="myModal" class="modal fade" role="dialog">
@@ -107,18 +124,22 @@
                       </div>
                     </div>
                     <div class="mb-2 row">
-                      <div class="col-md-4">Passwords</div>
+                      <div class="col-md-4">Password</div>
                       <div class="col-md-8">
-                          <input id="pas" class="form-control" type="password" placeholder="Passwords" aria-label="default input example">
+                          <input id="pas" class="form-control" type="password" placeholder="Password" aria-label="default input example">
                       </div>
                     </div>
+                    <!-- footer modal -->
+                    <div class="modal-footer">
+                      <button class="btn btn-info" id="list" type="button">Login</button>
+                      <button type="button" class="btn btn-white" href="">Lupa Password</button>
+                      <button type="button" class="btn btn-default" data-bs-dismiss="modal">Tutup</button>
                     </div>
+                  </div>
                     
-                  </div>
-                  <!-- footer modal -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
-                  </div>
+                </div>
+                  
+                  
                 </div>
               </form>
           
@@ -134,27 +155,26 @@
 <footer>
   <div class="container-fluid">
     <div class="row">
-      <div class="footer col-md-6 me-5">
-        <div class="mb-2 row">
-
+      <div class="footer col-md-5 me-5">
+        <div class="mb-1 row">
           <h4>About</h4>
+          <div><hr class="dropdown-divider mb-3 row"></div>
         <a href="http://wa.me/081233433730" target="_blank" rel="noopener noreferrer" class="pe-2 text-black"> 
           <i class="bi bi-whatsapp"></i> Whatsapp
         </a><br>
-
         </div>
         <div class="mb-5 row"></div>
-        
-          <div class="mb-1 row">Copyright © 2022</div>
-       
-        
-      </div>
+         <div class="mb-1 row">Copyright © 2022</div>
+       </div>
       
-      <div class="footer col-md-5 mb-5 row">
+      <div class="footer col-md-5 me-5">
+        <div class="mb-1 row">
         <h4>Hubungi</h4>
+        <div><hr class="dropdown-divider mb-3 row"></div>
         <a href="http://wa.me/081233433730" target="_blank" rel="noopener noreferrer" class="pe-2 text-black"> 
           <i class="bi bi-whatsapp"></i> Whatsapp
         </a><br>
+      </div>
                     
       </div>
     </div>
@@ -163,6 +183,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-
+<script src="asset/sign up.js"></script>
 </body>
 </html>

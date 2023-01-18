@@ -12,3 +12,7 @@ img {
 footer {
     background-color: rgb(0, 140, 255);
 }
+
+.img{
+    padding-top: 40px!important;
+}
