@@ -1,5 +1,5 @@
-function sign() {
-    let namaa = document.getElementById("nama").value;
+function signn(){
+    let namaa = document.getElementById("nnaammaa").value;
     let usernamee = document.getElementById("user").value;
     let pass = document.getElementById("pas").value;
     let tanggal = document.getElementById("tgl").value;
@@ -18,9 +18,22 @@ function sign() {
 }
 
 function reseet(){
-    document.getElementById("nama").value = "";
+    document.getElementById("nnaammaa").value = "";
     document.getElementById("user").value = "";
     document.getElementById("pas").value = "";
     document.getElementById("tgl").value = "";
+    let j = "";
+    let jj = "";
+    if(document.getElementById("j1").checked == true){
+      j = document.getElementById("j1").value;
+    }
+    if(document.getElementById("j2").checked == true){
+      jj = document.getElementById("j2").value;
+    }
     document.getElementById("mail").value = "";
 }
+
+// // document.getElementById("signn").onclick = function(){
+//   let nama = document.getElementById('nnaammaa').value;
+//   combobox();
+// }
