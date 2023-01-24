@@ -13,6 +13,14 @@ footer {
     background-color: rgb(0, 140, 255);
 }
 
-.img{
-    padding-top: 40px!important;
+.img1{
+    padding-top: 30px!important;
+}
+
+.img2{
+    padding-top: 50px!important;
+}
+
+.imgnovel{
+    width: 350px;
 }
